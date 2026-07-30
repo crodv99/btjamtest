@@ -23,7 +23,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 // ---------------------------
 // Pines de la matriz 1x4
 // ---------------------------
-#define ROW_PIN   32
+//#define ROW_PIN   32
 #define BTN_UP    33
 #define BTN_DOWN  26
 #define BTN_ENTER 17   // S3
@@ -98,8 +98,8 @@ void setup() {
   display.setTextSize(1);
   display.setTextColor(SSD1306_WHITE);
 
-  pinMode(ROW_PIN, OUTPUT);
-  digitalWrite(ROW_PIN, HIGH);
+  //pinMode(ROW_PIN, OUTPUT);
+  //digitalWrite(ROW_PIN, HIGH);
   pinMode(BTN_UP, INPUT_PULLDOWN);
   pinMode(BTN_DOWN, INPUT_PULLDOWN);
   pinMode(BTN_ENTER, INPUT_PULLDOWN);
